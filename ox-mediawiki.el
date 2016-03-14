@@ -408,7 +408,7 @@ a communication channel."
                               (concat "file://" (expand-file-name raw-path))))
                            (t raw-path))))
                (if (not contents) (format "%s" path)
-                 (format "[%s %s]" path (s-join " " (s-split "\n" contents)))))))))
+                 (format "[[Datei:%s|%s]]" path (s-join " " (s-split "\n" contents)))))))))
 
 
 ;;;; Paragraph
